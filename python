@@ -1,0 +1,27 @@
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Define parameters
+f1 = 100e6  # 100 MHz
+f2 = 150e6  # 150 MHz
+f_IF = 50e6  # 50 MHz IF frequency
+A1 = 1  # Input 1 amplitude
+A2 = 0.5  # Input 2 amplitude
+t = np.linspace(0, 1e-5, 1000)  # Time array
+
+# Generate input signals
+x1 = A1 * np.cos(2 * np.pi * f1 * t)  # Input signal 1
+x2 = A2 * np.cos(2 * np.pi * f2 * t)  # Input signal 2
+
+# Mix the signals
+x_mix = x1 * x2  # Mixer output
+
+# Plot the signals
+plt.figure(figsize=(10, 6))
+plt.subplot(3, 1, 1)
+plt.plot(t, x1)
+plt.xlabel('Time (s)')
+plt.ylabel('Input 1')
+plt.title('Input Signal 1')
+
+plt.subpl
