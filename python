@@ -1,6 +1,6 @@
 import numpy as np
 import matplotlib.pyplot as plt
-# Define parameters
+# Define parameters.65
 f1 = 100e6  # 100 MHz
 f2 = 150e6  # 150 MHz
 f_IF = 50e6  # 50 MHz IF frequency
